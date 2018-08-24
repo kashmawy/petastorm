@@ -136,6 +136,11 @@ def imagenet_directory_to_petastorm_dataset(imagenet_path, output_url, spark_mas
             .option('compression', 'none') \
             .parquet(output_url)
 
+        spark.sparkContext._jsc.hadoopConfiguration().set('my.mapreduce.setting', 'someVal')
+
+        # Shut down spark context
+        spark.sparkContext.stop()
+
 
 if __name__ == '__main__':
     args = _arg_parser().parse_args()
