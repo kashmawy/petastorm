@@ -117,7 +117,5 @@ Please follow the following instructions to develop Petastorm:
 1. virtualenv env
 2. source env/bin/activate
 3. pip install -U pip
-4. pip install -e .[opencv]
-5. For tensorflow without GPU: 'pip install -e .[tf]' or for tensorflow with gpu: 'pip install -e .[tf_gpu]'
-6. pip install -e .[test]
+4. For tensorflow with GPU: pip install -e .[opencv,tf,test]. For tensorflow with GPU: pip install -e .[opencv, tf_gpu, test]
 
