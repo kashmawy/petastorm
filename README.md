@@ -108,3 +108,14 @@ TODO: Reading a dataset from pytorch
 # Troubleshooting
 See the [Troubleshooting](docs/troubleshooting.md) page and please submit the [ticket](https://github.com/uber/petastorm/issues/new)
 if you can't find an answer.
+
+
+# Development
+
+Please follow the following instructions to develop Petastorm:
+
+1. virtualenv env
+2. source env/bin/activate
+3. pip install -U pip
+4. pip install -r requirements.txt
+
